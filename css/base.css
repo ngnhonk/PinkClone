@@ -1,0 +1,12 @@
+*{
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+:root{
+    --color-pink: #ff589e;
+    --color-blue: #8261EE;
+    --color-br-primary: #F2F2FE;
+    --color-br-gradient: linear-gradient(127deg, #a759d1 0%, #8261ee 91%);
+}
