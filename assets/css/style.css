@@ -6,9 +6,10 @@ html{
 header {
     position: fixed;
     z-index: 1000;
-    width: 100%; /* Đảm bảo header chiếm toàn bộ chiều rộng */
+    width: 100%;
     top: 0;
     left: 0;
+    
 }
 /* header .container-md{
     display: flex;
@@ -22,6 +23,7 @@ header .inner-content{
     padding: 25px 20px;
     border-radius: 50px;
     margin-top: 30px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
 header ul {
@@ -73,7 +75,7 @@ header .inner-content ul li a{
     margin: auto;
     display: flex;
     flex-direction: column;
-    padding-top: 350px;
+    padding-top: 240px;
 }
 
 .section-one .inner-content h3{
@@ -82,12 +84,16 @@ header .inner-content ul li a{
     text-align: center;
     justify-content: center;
     color: white;
+    margin: 0;
+    margin-bottom: 30px;
 }
 
 .section-one .inner-content p{
     font-size: 15px;
     text-align: center;
     color: white;
+    margin: 0;
+    margin-bottom: 40px;
 }
 
 .section-one .inner-content .btn1{
@@ -95,6 +101,7 @@ header .inner-content ul li a{
     justify-content: center;
     align-items: center;
 }
+
 .section-one .inner-content .btn1 p{
     background-color: var(--color-pink);
     font-size: 13px;
@@ -102,4 +109,81 @@ header .inner-content ul li a{
     border-radius: 26px;
     display: inline-block;
 }
+.section-one .inner-content .btn1 p:hover{
+    background-color: var(--color-blue);
+    transition: 0.5s;
+}
+
+@media (max-width: 1199.98px){
+    header .inner-content{
+        justify-content: space-between;
+    }
+    header .inner-content ul li{
+        font-size: 11px;
+        padding: 0 10px;
+    }
+}
+
+@media (max-width: 991.98px){
+    header .inner-content .details{
+        display: none;
+    }
+}
 /* End Section One */
+
+/* Section Two */
+.section-two .item{
+    background-color: var(--color-br-primary);
+    margin: 30px 10px;
+    padding: 30px;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: -150px;
+}
+.section-two .item .circle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: var(--color-blue);
+    color: white;
+    font-size: 40px;
+    margin: 10px 0;
+}
+.section-two .item .circle:hover{
+    background-color: var(--color-pink);
+    transition: 0.2s;
+}
+.section-two .item h3{
+    font-size: 18px;
+    margin: 20px 0;
+}
+
+.section-two .item p{
+    font-size: 13px;
+}
+/* End Section Two */
+
+/* Section Three */
+.section-three{
+    margin: 60px 0;
+}
+.section-three .container-md .left img{
+    object-fit: cover;
+    margin: 0 120px;
+}
+.section-three .inner-content h3{
+    font-size: 24px;
+    margin-bottom: 30px;
+}
+
+.section-three .inner-content .right{
+    /* padding: 40px; */
+}
+/* End Section Three */
