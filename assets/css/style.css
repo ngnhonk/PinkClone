@@ -25,7 +25,7 @@ header .inner-content{
     margin-top: 30px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
-
+ 
 header ul {
     list-style-type: none;
     display: flex;
@@ -143,6 +143,7 @@ header .inner-content ul li a{
     align-items: center;
     text-align: center;
     margin-top: -150px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 .section-two .item .circle{
     display: flex;
@@ -174,6 +175,11 @@ header .inner-content ul li a{
 .section-three{
     margin: 60px 0;
 }
+
+.section-three .inner-content{
+    border-bottom: 1px solid #f0eaea;
+    padding-bottom: 80px;
+}
 .section-three .container-md .left img{
     object-fit: cover;
     margin: 0 120px;
@@ -182,8 +188,49 @@ header .inner-content ul li a{
     font-size: 24px;
     margin-bottom: 30px;
 }
-
-.section-three .inner-content .right{
-    /* padding: 40px; */
+.section-three .inner-content p{
+    color: lightslategray;
+    line-height: 2;
 }
 /* End Section Three */
+
+/* Section Four */
+.section-four{
+    margin: 60px 0;
+}
+
+.section-four .inner-content{
+    margin-top: 120px;
+    margin-bottom: 60px;
+}
+.section-four .container-md .right img{
+    object-fit: cover;
+    margin: 0 80px;
+}
+.section-four .inner-content h3{
+    font-size: 24px;
+    margin-bottom: 30px;
+}
+.section-four .inner-content p{
+    color: lightslategray;
+    line-height: 2;
+}
+/* End Section Four */
+
+/* Section Five */
+.section-five{
+    margin: 60px 0;
+    background-image: url(/assets/images/work-process-bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.section-five .inner-content .row .item{
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+
+}
+.section-five .inner-content .row .item img{
+    object-fit: contain;
+}
+/* End Section Five */
